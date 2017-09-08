@@ -32,10 +32,10 @@ public class FrmUnidadDeMedida extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtDescripcion = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        btnModificar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,13 +50,13 @@ public class FrmUnidadDeMedida extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Guardar");
+        btnGuardar.setText("Guardar");
 
-        jButton2.setText("Modificar");
+        btnModificar.setText("Modificar");
 
-        jButton3.setText("Eliminar");
+        btnEliminar.setText("Eliminar");
 
-        jButton4.setText("Limpiar");
+        btnLimpiar.setText("Limpiar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -66,13 +66,13 @@ public class FrmUnidadDeMedida extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnGuardar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)
+                        .addComponent(btnModificar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(btnEliminar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4))
+                        .addComponent(btnLimpiar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -102,11 +102,11 @@ public class FrmUnidadDeMedida extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
+                    .addComponent(btnGuardar)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton4)
-                        .addComponent(jButton3)
-                        .addComponent(jButton2)))
+                        .addComponent(btnLimpiar)
+                        .addComponent(btnEliminar)
+                        .addComponent(btnModificar)))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -153,14 +153,14 @@ public class FrmUnidadDeMedida extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnModificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField txtDescripcion;
-    private javax.swing.JTextField txtUnidadDeMedida;
+    public javax.swing.JTextField txtDescripcion;
+    public javax.swing.JTextField txtUnidadDeMedida;
     // End of variables declaration//GEN-END:variables
 }
