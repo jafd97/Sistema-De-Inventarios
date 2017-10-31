@@ -18,7 +18,7 @@ public class UnidadDeMedidaSQL extends Conexion{
         PreparedStatement ps = null;
         Connection con = getConexion();
         
-        String sql = "INSERT INTO TblUnidadesDeMedida(UnidadDeMedida,Descripcion)"+
+        String sql = "INSERT INTO UnidadesMedida(UnidadDeMedida,Descripcion)"+
                 "values(?,?)";
         try
         {
@@ -48,7 +48,7 @@ public class UnidadDeMedidaSQL extends Conexion{
         PreparedStatement ps = null;
         Connection con = getConexion();
         
-        String sql = "UPDATE TblUnidadesDeMedida SET Descripcion=?"+
+        String sql = "UPDATE UnidadesMedida SET Descripcion=?"+
                 "where UnidadDeMedida = ?";
         try
         {
@@ -78,7 +78,7 @@ public class UnidadDeMedidaSQL extends Conexion{
         PreparedStatement ps = null;
         Connection con = getConexion();
         
-        String sql = "Delete FROM TblUnidadesDeMedida where UnidadDeMedida = ?";
+        String sql = "Delete FROM UnidadesMedida where UnidadDeMedida = ?";
         try
         {
             ps = con.prepareStatement(sql);
@@ -107,7 +107,7 @@ public class UnidadDeMedidaSQL extends Conexion{
         ResultSet rs = null;
         Connection con = getConexion();
         
-        String sql = "SELECT UnidadDeMedida, Descripcion FROM TblUnidadesDeMedida where UnidadDeMedida = ?";
+        String sql = "SELECT UnidadDeMedida, Descripcion FROM UnidadesMedida where UnidadDeMedida = ?";
         try
         {
             ps = con.prepareStatement(sql);
