@@ -5,10 +5,8 @@
  */
 package sistemaDeInventarios;
 
-import Controlador.CtrlUnidadDeMedida;
-import Modelo.UnidadDeMedida;
-import Modelo.UnidadDeMedidaSQL;
-import Vista.FrmUnidadDeMedida;
+
+import Vista.FrmPrincipal;
 
 /**
  *
@@ -20,12 +18,7 @@ public class SistemaDeInventarios {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        UnidadDeMedida um = new UnidadDeMedida();
-        UnidadDeMedidaSQL modC = new UnidadDeMedidaSQL();
-        FrmUnidadDeMedida frm = new FrmUnidadDeMedida();
-        
-        CtrlUnidadDeMedida ctrl = new CtrlUnidadDeMedida(um, modC, frm);
-        ctrl.Iniciar();
+        FrmPrincipal frm = new FrmPrincipal();
         frm.setVisible(true);
     }
     

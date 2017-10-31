@@ -108,6 +108,7 @@ public class CtrlUnidadDeMedida implements ActionListener{
         
          if(e.getSource()==frm.btnLimpiar)
         {
+  
             Limpiar();
         }
     }
