@@ -15,7 +15,9 @@ import java.util.logging.Logger;
  * @author ialonzo
  */
 public class Conexion {
-    //comentario de prueba
+    /*se cambia el comentario de prueba
+       por este otro.
+    */
      private final String base = "inventarios";
     private final String user = "root";
     private final String password = "root";
