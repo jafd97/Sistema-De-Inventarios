@@ -32,11 +32,16 @@ public class FrmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         mnuUnidadesDeMedida = new javax.swing.JMenuItem();
+        MnuClientes = new javax.swing.JMenuItem();
+        MnuProveedores = new javax.swing.JMenuItem();
         MnuSalir = new javax.swing.JMenu();
+
+        jMenuItem2.setText("jMenuItem2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,6 +57,12 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(mnuUnidadesDeMedida);
+
+        MnuClientes.setText("Clientes");
+        jMenu1.add(MnuClientes);
+
+        MnuProveedores.setText("Proveedores");
+        jMenu1.add(MnuProveedores);
 
         jMenuBar1.add(jMenu1);
 
@@ -129,10 +140,13 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem MnuClientes;
+    private javax.swing.JMenuItem MnuProveedores;
     private javax.swing.JMenu MnuSalir;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem mnuUnidadesDeMedida;
     // End of variables declaration//GEN-END:variables
 }
